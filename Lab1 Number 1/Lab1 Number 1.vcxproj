@@ -128,16 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataLoader.cpp" />
-    <ClCompile Include="FindRole.cpp" />
+    <ClCompile Include="Films.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SortedFilms.cpp" />
     <ClCompile Include="StarActor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataLoader.h" />
     <ClInclude Include="Films.h" />
-    <ClInclude Include="FindRole.h" />
-    <ClInclude Include="SortedFilms.h" />
     <ClInclude Include="StarActor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

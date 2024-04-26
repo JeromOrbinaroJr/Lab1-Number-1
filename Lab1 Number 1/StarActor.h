@@ -4,15 +4,6 @@
 #include "Films.h"
 
 class StarActor {
-private:
-    std::string m_lastName;
-    std::string m_firstName;
-    std::string m_patronymic;
-    std::string m_gender;
-    std::string m_citizenship;
-    std::string m_country;
-    std::vector<Films> m_filmsParticipated;
-
 public:
     StarActor(const std::string& lastName, const std::string& firstName, const std::string& patronymic, const std::string& gender, const std::string& citizenship, const std::string& country);
 
@@ -32,6 +23,15 @@ public:
     void setGender(const std::string& gender);
     void setCitizenship(const std::string& citizenship);
     void setCountry(const std::string& country);
-    std::vector<Films>& getFilmsParticipated();
+    std::vector<Films>& getFilmsParticipated();//const
     void addFilmParticipated(const Films& film);
+
+private:
+    std::string m_lastName;
+    std::string m_firstName;
+    std::string m_patronymic;
+    std::string m_gender;
+    std::string m_citizenship;
+    std::string m_country;
+    std::vector<Films> m_filmsParticipated;
 };
